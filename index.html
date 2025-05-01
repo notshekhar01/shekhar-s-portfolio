@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio of Shekhar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend-developer</p>
+                <h1>Hi, I'm <span><br>Chandra <br>Shekhar</span> <br>Gupta from India</h1>
+            </div>
+        </div>
+    </div><br>
+    <!-- --------about--------- -->
+    <div id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user2.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <br>
+                    <p>I am a detail-oriented and passionate Frontend Developer with an MCA degree and expertise in HTML,
+                         CSS, JavaScript, React.js, and Git. I specialize in creating clean, responsive, and user-friendly web 
+                         interfaces. With a strong foundation in modern web technologies, I am eager to contribute my skills to 
+                         dynamic projects while continuously learning and refining my craft. Currently, I am expanding my expertise 
+                         in API integration, debugging, and WordPress customization to enhance my development capabilities.
+                    </p>
+                    <div class="tab-titles">
+                        <p  class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li><br>
+                            <li><span>HTML,CSS</span><br>Web Development</li><br>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>UI/UX Designing </li><br>
+                            <li><span>2021 - current</span><br>Web Development</li><br>
+                            <li><span>2023 - current</span><br>Designing web/app interfaces</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Full Stack Development at Apna College </li><br>
+                            <li><span>2023</span><br>MCA from Chhatrapati Shahu Ji Maharaj University, Kanpur</li><br>
+                            <li><span>2020 </span><br>BSc(Maths) from Allahbad State University</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <!-- --------services--------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, 
+                        quis nobis eum aspernatur natus optio et quisquam quia, sunt, nostrum asperiores officia a eius.
+                         Officia excepturi iusto dolore voluptatum expedita!
+                    </p>
+                    <a href="#">learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-dev"></i>
+                    <h2>Web Development</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, 
+                        quis nobis eum aspernatur natus optio et quisquam quia, sunt, nostrum asperiores officia a eius.
+                         Officia excepturi iusto dolore voluptatum expedita!
+                    </p>
+                    <a href="#">learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-object-group"></i>
+                    <h2>Web Design</h2><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, 
+                        quis nobis eum aspernatur natus optio et quisquam quia, sunt, nostrum asperiores officia a eius.
+                         Officia excepturi iusto dolore voluptatum expedita!
+                    </p>
+                    <a href="#">learn more..</a>
+                </div>
+            </div>
+        </div>
+     </div><br><br>
+     <!-- -----------portfolio------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talent people arount the globe.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talent people arount the globe.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Simon Says</h3>
+                        <p>The app connects you to the talent people arount the globe.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more..</a>
+        </div>
+      </div>
+      <!-- ---------contact---------- -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>gshekhar740@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+917007971623</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="shekhar's resume(new1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form><br>
+                <span id="msg"></span>
+            </div>
+        </div>
+       </div>
+<div class="copyright">
+    <p>Copyright © Shekhar. Made with <i class="fa-solid fa-heart"></i> by Chandra Shekhar Gupta</p>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab (tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxiBxwU09bK1IZ5yd67mG7AWjLLDc7L0luJljTQJz_wufWZJm6v1aGyNkkjId5MQQr8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
